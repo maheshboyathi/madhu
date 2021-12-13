@@ -27,9 +27,7 @@ fi'''
 
     stage('deploy') {
       steps {
-        sh '''for i in {1..5}
-do
-done'''
+        sh '1 1 2'
       }
     }
 
