@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''a=$1
 b=$2
-'''
+c=$3'''
       }
     }
 
@@ -13,11 +13,23 @@ b=$2
       steps {
         sh '''if [ $a == $b ]
 then
-echo \'a equal b\'
+if [ $a == $c ]
+then
+echo \'a,b,c are equal\'
 else
-echo \'a not equal b\'
+echo \'a,b are equal but a is not equal c\'
 fi
-'''
+else
+echo \'a is not equal b\'
+fi'''
+      }
+    }
+
+    stage('deploy') {
+      steps {
+        sh '''for i in {1..5}
+do
+done'''
       }
     }
 
