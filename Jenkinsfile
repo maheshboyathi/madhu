@@ -27,7 +27,7 @@ fi'''
 
     stage('deploy') {
       steps {
-        sh '1 1 2'
+        sh 'echo \'1 1 3\''
       }
     }
 
