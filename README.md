@@ -1,4 +1,3 @@
 # madhu
-# for git pratice
-#!/bin/bash
+# for git practice
 echo "learning git"
