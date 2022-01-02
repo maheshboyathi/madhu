@@ -1,0 +1,14 @@
+pipeline(){
+    agent any{
+        label 'node'
+    }
+    stages(){
+        stage('build'){
+            steps{
+                sh '''
+                docker build -t i1 /root/docker 
+                '''
+            }
+        }
+     }
+  }
