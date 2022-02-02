@@ -1,0 +1,13 @@
+---
+
+- hosts: localhost
+  tasks:
+    - name: myvpc
+      ec2_vpc_net:
+        name: myvol
+        state: absent
+        cidr_block: 172.31.0.0/16
+        region: us-east-1
+
+
+...
