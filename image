@@ -1,12 +1,12 @@
 pipeline(){
     agent any{
-        label 'node'
+        label 'node2'
     }
     stages(){
         stage('build'){
             steps{
                 sh '''
-                docker build -t i1 /root/docker 
+                docker build -t i2 /root/docker 
                 '''
             }
         }
